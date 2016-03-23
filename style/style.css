@@ -82,7 +82,7 @@ font-size: 13px;color: #666;outline: none;}
 #ad .next,#ad .prev{width: 75px;height: 150px;margin-top: -75px;position: absolute;top:50%;z-index: 6;display: none;}
 #ad .prev{background: url(../images/banner/prev.png);left: 0;}
 #ad .next{background: url(../images/banner/next.png);right: 0;}
-#ad .prev_bg,#ad .next_bg{position: absolute;top:0;z-index: 5;width: 470px;height: 300px;filter: alpha(opacity:0);opacity: 0;}
+#ad .prev_bg,#ad .next_bg{position: absolute;top:0;z-index: 5;width: 470px;height: 300px;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);filter: alpha(opacity:0);opacity: 0;}
 #ad .prev_bg{left:0;background: yellow;}
 #ad .next_bg{right: 0;background: red;}
 
@@ -131,6 +131,7 @@ font-size: 13px;color: #666;outline: none;}
 .sort a:hover{background: url(../images/shopping_bg.png)-19px -376px;}
 .sort ul{width: 108px;border: 1px solid #ccc;background: #fff;position: absolute;top:18px;left:0;z-index: 1;display: none;}
 .sort li{font-size: 12px;line-height: 20px;text-indent: 5px;cursor: pointer;}
+.sort .active{background: #099;color: #fff;}
 .sort p{font-size: 12px;float: right;color: #747474;}
 .sort p strong{color: #999;}
 .sort p span{padding: 0 5px;}
@@ -197,6 +198,7 @@ font-size: 13px;color: #666;outline: none;}
 
 .list_wrap{
     width: 615px;
+    position: relative;
     padding-top: 32px;
     margin: 0 auto;
     overflow: hidden;
